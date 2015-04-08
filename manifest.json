@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Grayscale Internet",
+  "description": "Renders the Internet in black and white.",
+  "version": "1.0",
+  "permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery.js", "grayscale.js"]
+    }
+  ]
+}
